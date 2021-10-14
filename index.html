@@ -6,8 +6,14 @@
 </head>
 <body>
 <form action="back.php" onsubmit="verify(event)">
-    <input type="text" placeholder="Usuario" name="username">
-    <input type="password" placeholder="Contraseña" name="password">
+   <div id="userver" style= display:none>
+       This username has to be more than three characters long
+   </div>
+    <input type="text" placeholder="User" name="username">
+   <div  id="passwordver" style=display:none>
+       This password has to be more than three characters long
+   </div>
+    <input type="password" placeholder="Password" name="password">
     <input type="submit" value="Login">
 </form>
 <script src="script.js"></script>
