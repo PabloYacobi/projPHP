@@ -1,9 +1,10 @@
 <?php
 $a=0;
-$year=2006;
-echo("Has nacido en ".$year );
-
-while($a<=10){
-    echo($a);
+$n=0;
+while($a<count($output)){
+    echo($output[$a].PHP_EOL);
+    if(strlen($output[$a])==4){
+        $n++;
+    }
     $a++;
 }
